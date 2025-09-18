@@ -14,7 +14,7 @@ Aplicacion de escritorio construida con Flet para Windows que elimina el fondo d
 - `pip` 24+ (incluido en Python 3.12)
 - (Opcional) [uv](https://docs.astral.sh/uv/) para manejar dependencias mas rapido
 
-## Instalacion
+## Instalacion (uv recomendado)
 ```powershell
 # 1. Clona el repositorio
 git clone https://github.com/pabloacalvo/BackgroundDeletePCApp.git
@@ -28,7 +28,7 @@ python -m venv .venv
 pip install --upgrade pip
 pip install -e .
 ```
-Si prefieres usar `uv`, reemplaza los dos ultimos comandos por:
+Si preferis usar `uv`, reemplaza los dos ultimos comandos por:
 ```powershell
 pip install uv
 uv sync
@@ -59,7 +59,7 @@ Cada ejecucion crea una carpeta fechada (por ejemplo `2025-09-15_00_00-30`) dent
 
 ## Estructura del proyecto
 ```
-AppFlet-ImgBackgroundDelete/
+BackgroundDeletePCApp/
 |-- Remover_background_UI.py      # UI principal en Flet
 |-- utils/
 |   `-- backgroud_remove.py       # Logica de eliminacion de fondo y manejo de carpetas
